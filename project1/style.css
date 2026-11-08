@@ -6,11 +6,14 @@
     font-family: baumans;
     
 }
+body{
+  width: 100vw;
+}
 a {
   -webkit-tap-highlight-color: transparent;
 }
 html, body {
-            background-color: #faf9f6;
+            background-color: #F4F0EA;
   scroll-behavior: smooth;
 }            
 img {
@@ -30,6 +33,7 @@ img {
   0 4px 12px -2px rgba(0, 0, 0, 0.12);
     border-bottom-left-radius: 15px;
     border-bottom-right-radius:15px ;
+    width: 100vw;
 }    
 a
 {
@@ -37,17 +41,18 @@ a
     text-decoration: none;
 }
 ul,li{  
-    margin-top:1.2rem;
+    margin-top: 8px;
     list-style-type: none;
     display: flex;
-    padding-inline: 40px;
-    font-size: 30px;
+    /* padding-inline: 40px; */
+    font-size: 20px;
     color: inherit;
     color:#b54f05 ;
     -webkit-tap-highlight-color: transparent;
     outline: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    gap: 4vw;
 }
 li:hover{
  color: black;
@@ -78,13 +83,14 @@ li:hover{
   to{width:120%;}
 }
 .logo{
-  height:5vw;
+  height:3vw;
   margin: 4px;
-  margin-bottom: 15px;
+  margin-bottom: px;
 }
 .search{
     margin-right: 20px;
-    margin-top: 40px;
+    margin-top: 13px;
+    margin-bottom: 10px;
     height: 30px;
     border-radius:15px;
     box-shadow:0px 0px 5px 1px rgba(0, 0, 0, 0.35);
@@ -95,27 +101,30 @@ li:hover{
 }
 .profile{
   display: inline-flex;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow:0px 0px 5px 1px rgba(0, 0, 0, 0.35);
+  /* background-color: white; */
+  /* border-radius: 20px; */
+  /* box-shadow:0px 0px 5px 1px rgba(0, 0, 0, 0.35); */
   padding-inline: 10px;
-  color: grey;
+  color: #b54f05;
   margin-left: 0px;
   font-size: 10;
   
 }
+ .profile:hover{
+  color: black;
+ }
   .ppactive{
   animation-name: pactive;
-  animation-duration: 0.6s;
-  border:solid 0px #2a576f ;
-  animation-fill-mode: forwards;
+   animation-duration: 0.6s;
+ 
+  animation-fill-mode: forwards; 
 }
 @keyframes pactive{
-  from{border:solid 0px #2a576f ;}
-  to{border:solid 5px #2a576f ;}
+  from{color: #b54f05;}
+  to{color: black;}
 }
 .profileicon{
-  height: 35px;
+  height: 25px;
   padding-top: 4px;
 }
 .h1{
@@ -140,7 +149,7 @@ li:hover{
 .ad{
     border-bottom-left-radius:10vw;
     border-radius: 10vw;
-    height: 70vh;
+    height: 100vh;
     background-image:url(ad/city.jpg) ;
     background-position:center;
     animation: ads 10s infinite step-end;
@@ -150,7 +159,7 @@ li:hover{
   font-size:6vw;
   
   color: #2a576f;
-  background-color:#faf9f6;
+  background-color:#F4F0EA;
   width: fit-content;
   padding-bottom: vw;
   padding-top: vw;
@@ -205,7 +214,9 @@ li:hover{
     height: 35rem;
     padding: 0.7rem;
     border-radius: 2rem;
-    box-shadow:0px 0px 9px 1px rgba(0, 0, 0, 0.35);
+    box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
     backdrop-filter: blur(10px);
     cursor: pointer;
     animation: fadeInUp 1.4s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
@@ -264,13 +275,13 @@ li:hover{
 }
 .rated{
   padding-left:1rem;
-  font-size: 2rem;
+  font-size: 20px;
   color: black;
   display: flex;
   margin-top: 0.5rem;
 }
 .star{
-  height: 1.7rem;
+  height: 1rem;
   margin-top: 0.2rem;
   
 }
@@ -281,7 +292,7 @@ li:hover{
   margin-top: 2rem;
 }
 .book{
-  font-size: 2rem;
+  font-size: 25px;
   background-color: white;
   border-radius: 2rem;
   padding: 0.3rem 1.4rem;
@@ -451,9 +462,9 @@ li:hover{
   font-size: 1.4vw;
   color: black;
   border-radius: 35px;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   margin-top: 3vw;
   margin-left: 15vw;
   margin-right: 15vw;
@@ -482,9 +493,9 @@ li:hover{
 .packagesbtn{
   background-color: white;
   border-radius: 20px;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   display: block;
   width: 180px;
   margin: 0 auto;   
@@ -515,9 +526,9 @@ li:hover{
  }
  .specscard{
    background-color: white;
-   box-shadow: 
-   0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-   0 4px 12px -2px rgba(0, 0, 0, 0.12);
+   box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
    border-radius: 35px;
    text-align: center;
    width: 25vw;
@@ -532,7 +543,7 @@ li:hover{
  }
  .specscard:hover{
    transform: translateY(-12px);
-      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.3);
       border-color: #2a576f;
  }
  .figures{
@@ -541,9 +552,9 @@ li:hover{
  }
  .figurecards{
    background-color:white;
-   box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+   box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
    border-radius: 35px;
    margin-inline: 5vw;
    margin-top: 3vw;
@@ -557,7 +568,7 @@ li:hover{
  }
  .figurecards:hover{
    transform: translateY(-12px);
-      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.3);
       
  }
  .review{
@@ -569,9 +580,9 @@ li:hover{
    padding: 2vw;
    margin-inline: 1vw;
    width: 35vw;
-   box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+   box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
    border-radius: 35px;
    border-left: 2px solid #FF7722;
    margin-top: 2vw;
@@ -584,7 +595,7 @@ li:hover{
  }
  .review1:hover{
   transform: translateY(-12px);
-      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.3);
       
  }
  @keyframes fadeInUp {
@@ -627,7 +638,7 @@ li:hover{
 }
 .servicecard:hover{
    transform: translateY(-12px);
-      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.3);
       border-color: #2a576f;
 }
 .sdis{padding-inline: 10vw;
@@ -701,9 +712,9 @@ li:hover{
   background-color: white;
   padding: 3vw;
   margin: 3vw;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   width: 35vw;
   border-radius: 30px;
 }
@@ -749,9 +760,9 @@ li:hover{
   padding: 3vw;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   border-radius:30px;
   margin-right: 3vw;
 }
@@ -787,9 +798,9 @@ li:hover{
   padding: 3vw;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   border-radius:30px;
   margin-right: 3vw;
 }
@@ -822,9 +833,9 @@ li:hover{
   padding: 3vw;
   margin-top: 3vw;
   margin-bottom: 3vw;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   border-radius:30px;
   margin-right: 3vw;
   
@@ -845,7 +856,7 @@ li:hover{
 }
 .homebanner{
   background-image: url(ad/homebanner2.jpg);
-  height:90vh;
+  
   background-position: 100% 60%;
   margin-bottom: 3vw;
 }
@@ -904,22 +915,26 @@ li:hover{
   padding-inline:10px;
   border-radius:20px;
   line-height:3;
+  
 }
 .facility{
   display: flex;
   margin-left: 3vw;
   margin-top: 10vw;
+
 }
 .cunsulting{
   text-align: right;
   color: white;
   font-size: 1vw;
-  margin-left: 20vw;
+  right: 5vw;
   margin-top: 3vw;
   border:4px solid rgba(255, 255, 255, 0.3);
   padding: 2vw;
   border-radius:30px;
   margin-top: 0vw;
+  margin-left: 15vw;
+  margin-bottom: 5vw;
 }
 .cunsultbtn{
   color:#FF7722;
@@ -960,9 +975,9 @@ li:hover{
 }
 .category-card{
   background-color:white;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   border-radius:30px;
   margin-inline: 3vw;
   padding: 3vw;
@@ -977,7 +992,7 @@ li:hover{
 }
 .category-card:hover{
    transform: translateY(-12px);
-      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.3);
       border-color: #2a576f;
 }
 .category-icon{
@@ -993,9 +1008,9 @@ li:hover{
 }
 .story-card{
   background-color:white;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+   box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   border-radius:30px;
   margin-inline: 3vw;
   
@@ -1010,7 +1025,7 @@ li:hover{
 }
 .story-card:hover{
    transform: translateY(-12px);
-      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.3);
       border-color: #2a576f;
 }
 .card-image-1{
@@ -1057,9 +1072,9 @@ li:hover{
 
 .utility-box{
   background-color:white;
-  box-shadow: 
-  0 1px 2px -1px rgba(0, 0, 0, 0.08), 
-  0 4px 12px -2px rgba(0, 0, 0, 0.12);
+   box-shadow:
+    0 2px 4px -1px rgba(15, 23, 42, 0.06),
+    0 10px 20px -2px rgba(15, 23, 42, 0.05);
   border-radius:30px;
   margin-inline: 3vw;
   padding-inline: 3vw;
@@ -1074,12 +1089,12 @@ li:hover{
 }
 .utility-box:hover{
    transform: translateY(-12px);
-      box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.12);
+       box-shadow: 0 16px 32px -8px rgba(15, 23, 42, 0.3);
       border-color: #2a576f;
 }
 .climate{
   font-size: 1.5vw;
-  background-color:hwb(0 91% 9%) ;
+  background-color:#F4F0EA ;
   border-radius:15px;
   padding: 4px;
   text-align: center;
